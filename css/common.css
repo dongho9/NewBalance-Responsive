@@ -1,0 +1,119 @@
+@charset "utf-8";
+a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+body{
+    font-family: 'Hahmlet';
+    font-weight: 400;
+}
+h2{
+    color: #CF112D;
+    font-size: 24px;
+    margin-top: 50px;
+} 
+.mc{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 탭메뉴 */
+.tab_wrap {
+    width: 1200px;
+    margin: 30px auto 0; 
+    /* padding: 0 15px; */
+}
+.tab_wrap .tit_list {
+    position: relative;
+    font-size: 0;
+}
+.tab_wrap .tit_list::after {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    z-index: 1;
+}
+
+.tab_wrap .tit_list > li {
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: top;
+}
+.tab_wrap .tit_list > li a {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+.tab_wrap .tit_list > li a:hover {
+    background: #efefef;
+}
+.tab_wrap .tit_list > li.active a {
+    position: relative;
+    background: #fff;
+    color: #CF112D;
+    z-index: 2;
+}
+.tab_wrap .tab_con .tab_list{
+    display: none;
+    padding: 15px 0px;
+}
+.tab_wrap .tab_con .tab_list2{
+    /* display: none; */
+    padding: 15px 0px;
+}
+
+/* 슬라이드 */
+.slider {
+    font-size: 0;
+}
+.slider .inner {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+.slide_list > li {
+    width: 25%;
+    /* background: #8ab4f8; */
+    font-size: 20px;
+    line-height: 40px;
+    color: #000;
+}
+.swiper-slide p{
+    font-size: 17px;
+}
+.swiper-slide span{
+    font-size: 14px;
+}
+
+
+
+
+
+
+/* 푸터영역 */
+footer{
+    background-color: #333;
+    width: 100%;
+    height: 150px;
+    margin-top: 50px;
+}
+address{
+
+    width: 1200px;
+    margin: 0 auto;
+}
+address > p{
+    color: #fff;
+
+}
+
+
+
+
+/* https://dbreblog.com/53 */
