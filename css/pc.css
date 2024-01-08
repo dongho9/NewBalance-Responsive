@@ -121,6 +121,10 @@
         position: absolute;
       }
     /* 메인영역 */
+      main{
+        width: 100%;
+        position: relative;
+      }
       .visual{
 
       }
@@ -258,24 +262,16 @@
         height: 300px;
       }
 
+
       /* 메인콘텐츠4 */
-      .mc4_wrap{
-        display: flex;
-        justify-content: space-between;
-      }
-      .mc4_b{
-        margin-top: 30px;
-        width: 292.5px;
-        height: 292.5px;
-        position: relative;
-      }
-      .mc4_b img{
+      .mc_box{
+        margin-top: 50px;
         width: 100%;
-        height: 100%;
-      }
-      .mc4_b p{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-      }
+        height: 700px;
+        background-image: url(/img/pcmain6.jpg);
+        background-attachment: fixed; /* 배경고정 */
+        background-repeat: no-repeat; /* 이미지 반복하지 않기 */
+        background-size: cover;  /* 화면에 꽉차게하기 */
+    }
+
 }

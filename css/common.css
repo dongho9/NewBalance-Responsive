@@ -15,9 +15,9 @@ h2{
 } 
 .mc{
     width: 1200px;
+    position: relative;
     margin: 0 auto;
 }
-
 /* 탭메뉴 */
 .tab_wrap {
     width: 1200px;
@@ -63,10 +63,6 @@ h2{
     display: none;
     padding: 15px 0px;
 }
-.tab_wrap .tab_con .tab_list2{
-    /* display: none; */
-    padding: 15px 0px;
-}
 
 /* 슬라이드 */
 .slider {
@@ -86,12 +82,63 @@ h2{
 }
 .swiper-slide p{
     font-size: 17px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
 }
 .swiper-slide span{
     font-size: 14px;
 }
 
 
+
+/* 탭메뉴 */
+.tab_wrap2{
+    width: 1200px;
+    margin: 30px auto 0; 
+    /* padding: 0 15px; */
+}
+.tab_wrap2 .tit_list {
+    position: relative;
+    font-size: 0;
+}
+.tab_wrap2 .tit_list::after {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    z-index: 1;
+}
+
+.tab_wrap2 .tit_list > li {
+    display: inline-block;
+    margin-right: 3px;
+    vertical-align: top;
+}
+.tab_wrap2 .tit_list > li a {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+.tab_wrap2 .tit_list > li a:hover {
+    background: #efefef;
+}
+.tab_wrap2 .tab_con2 .tab_list{
+    display: none;
+    padding: 15px 0px;
+}
+.vm a{
+    color: #CF112D;
+    position: absolute;
+    right: 0;
+    font-size: 13px;
+    top: 0px;
+}
 
 
 
