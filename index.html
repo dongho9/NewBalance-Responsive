@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/common.css" type="text/css">
     <link rel="stylesheet" href="css/mobile.css" type="text/css">
-    <link rel="stylesheet" href="css/tablet.css" type="text/css">
-    <link rel="stylesheet" href="css/pc.css" type="text/css">
+    <link rel="stylesheet" href="./css/tablet.css" type="text/css">
+    <link rel="stylesheet" href="./css/pc.css" type="text/css">
     <link rel="stylesheet" href="css/swiper.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,35 +18,40 @@
 <body>
     <!-- 헤더 영역 -->
     <header>
+
         <h1>
             <a href="#" title="메인페이지 이동">
                 <img src="img/Group 54.png" alt="">
             </a>
         </h1>
-
+        
         <div class="log">
             <ul>
                 <li>
                     <a href="#" title="로그인">
-                            로그인
+                        로그인
                     </a>
                 </li>
                 <li>
                     <a href="#" title="회원가입">
-                            회원가입
+                        회원가입
                     </a>
                 </li>
                 <li>
-                    <a href="#" title="검색">
-                        <span class="fas fa-search"></span>
-                    </a>
+                    <input type="checkbox" id="y">
+                    <label for="y" class="fas fa-search"></label>
                 </li>
                 <li>
                     <a href="#" title="shop">
-                            <img src="img/icon_gnb_cart.png" alt="cart">
+                        <img src="img/icon_gnb_cart.png" alt="cart">
                     </a>
                 </li>
             </ul>
+        </div>
+
+        <div class="search_box">
+            <input type="search" placeholder="검색어를 입력하세요.">
+            <i class="fas fa-close"></i>
         </div>
 
         <nav class="gnb">
@@ -71,7 +76,7 @@
                         </dl>
                         <dl class="sub">
                             <dt>
-                                    신발
+                                신발
                             </dt>
                             <dd>
                                 <a href="#" title="">
@@ -381,38 +386,72 @@
               <div class="swiper-pagination"></div>
           </section>
 
-          <!-- 메인콘텐츠1 -->
-          <section>
-            <article class="m_con1">
-                <img src="img/intro.png" alt="">
-                <p>NEW BALANCE</p>
-                <p>ABOUT</p>
-                <span>
-                    미국 메사추세츠주 보스톤에서 영국인 발명가인 윌리엄 <br> 라일리는 자신의 뜰에서 노는 닭의 세 개의 발톱을 본 따서  삼각형 모양으로 3개의 중요한 <br> 지점들을 지지하여 편안함과 균형을 이루었으며, <br> 이러한 발명을 토대로 NEW BALANCE ARCH라는 회사가 탄생하였습니다
-                </span>
-            </article>
+
+          <!-- 메인콘텐츠2   -->
+          <section class="mc">
+            <h2>PROMOTION</h3>
+                <div class="mc1_wrap">
+                    <div class="mc1_box">
+                        <img src="img/img01.png" alt="">
+                        <p>Happy Holiday with New Balance</p>
+                        <a href="#" title="자세히">
+                            <span>자세히보기</span>
+                        </a>
+                    </div>
+                    <div class="mc1_box">
+                        <img src="img/img02.png" alt="">
+                        <p>MADE in USA Fall/Winter Collection</p>
+                        <a href="#" title="자세히">
+                            <span>자세히보기</span>
+                        </a>
+                    </div>
+                    <div class="mc1_box">
+                        <img src="img/img03.png" alt="">
+                        <p>New Balance 574 POP-UP Store</p>
+                        <a href="#" title="자세히">
+                            <span>자세히보기</span>
+                        </a>
+                    </div>
+                </div>
+          </section>
+      <!-- 메인콘텐츠4 -->
+          <section class="mc_box">
+            <div class="t_box">
+                <h3>CT302OC SHOES</h3>
+                <p>CT302를 특별한 가격에 만나보세요.</p>
+                <p>
+                    <a href="#" title="숍나우" class="shop">
+                        SHOP NOW
+                    </a>
+                </p>
+            </div>
+            <div class="tab_wrap3">
+                        <!-- swiper-slide -->
+                        <div class="slider">
+                            <div class="inner">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <img src="img/iu01.PNG" alt="">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/iu02.PNG" alt="">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/iu03.PNG" alt="">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/iu04.PNG" alt="">
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <img src="img/iu05.PNG" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
           </section>
 
-          <!-- 메인콘텐츠2 -->
-          <section class="mc">
-              <h2>PERFORMANCE INNOVATION</h3>
-              <article class="m_con2">
-                <img src="img/image 65.png" alt="메인이미지1">
-                <div class="box01">
-                    <h3>뉴발란스 퍼포먼스의 핵심가치 - FIT</h3>
-                    <p>1906년 33세였던 뉴발란스 창업자 윌리엄 라일리는 발에 장애가 있거나 하루 종일 서서 일하는 경찰, 소방관, 우체부 등을 위해 발에 무리가 가지 않는 신발을 연구하기 시작했습니다.그러던 어느날 마당에서 놀고 있는 닭이 발가락 3개만으로도 완벽한 균형을 이루고 있는 것을 발견했는데, 여기서 영감을 얻은 라일리는 발을 안정적으로 지지해주는 “아치 서포트(ARCH SUPPORT)”를 개발하였으며, 이를 통해 운동화 사업에 뛰어들었습니다.</p>
-                </div>
-            </article>
-            <article class="m_con2 m_con3">
-                <img src="img/image 66.png" alt="메인이미지2">
-                <div class="box01">
-                    <h3>뉴발란스의 목표</h3>
-                    <p>
-                        당사의 제품은 기능과 패션의 완벽한 조화로 귀하에게 필요한 성능 기술과 원하는 스타일을 제공합니다. 전 세계의 우리 직원들은 높은 수준의 기술과 창의성을 통해 이러한 목표를 실현합니다. 우리는 시장에서 최고의 제품을 제공하는 동시에 환원에도 똑같이 전념하고 있습니다. 따라서 우리는 성공을 추구하면서 다른 사람들에게도 동일한 기회를 제공해야 한다고 믿습니다.
-                    </p>
-                </div>
-            </article>
-          </section>
+
           
           <!-- 메인콘텐츠3 -->
           <section class="mc">
@@ -549,11 +588,59 @@
                             </div>
           </section>
 
-          <!-- 메인콘텐츠4 -->
-          <section class="mc_box">
-          
+          <!-- 메인콘텐츠1 -->
+          <section class="mc mc0">
+            <h2>NEW BALANCE STYLE</h2>
+            <div class="s_wrap">
+                <div class="s_box">
+                    <img src="img/img04.png" alt="">
+                    <p class="tag">하이</p>
+                    <a href="#" title="">
+                        <hr>
+                        <img src="img/image 76.png" alt="">
+                        <div class="s_name">
+                            <span>Men</span>
+                        </div>      
+                    </a>
+                </div>
+                <div class="s_box">
+                    <img src="img/img04.png" alt="">
+                    <p class="tag">하이</p>
+                    <a href="#" title="">
+                        <hr>
+                        <img src="img/image 76.png" alt="">
+                        <div class="s_name">
+                            <span>Men</span>
+                        </div>      
+                    </a>
+                </div>
+                <div class="s_box">
+                    <img src="img/image 73.png" alt="">
+                    <p class="tag">하이</p>
+                    <a href="#" title="">
+                        <hr>
+                        <img src="img/image 76.png" alt="">
+                        <div class="s_name">
+                            <span>Men</span>
+                        </div>      
+                    </a>
+                </div>
+                <div class="s_box">
+                    <img src="img/image 73.png" alt="">
+                    <p class="tag">하이</p>
+                    <a href="#" title="">
+                        <hr>
+                        <img src="img/image 76.png" alt="">
+                        <div class="s_name">
+                            <span>Men</span>
+                        </div>      
+                    </a>
+                </div>
+            </div>
+
           </section>
 
+    
              <!-- 메인콘텐츠5 -->
              <section class="mc">
                 <h2>WHAT'S BEST</h2>
@@ -619,7 +706,7 @@
             </p>
         </address>
     </footer>   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
      <script src="script/slide.js"></script>
      <script src="script/swiper.js"></script>
@@ -638,12 +725,13 @@
           }
         });
         </script>
+
       <script>
-$(document).ready(function() {
+    $(document).ready(function() {
     tab();
 })
 
-function tab() {
+    function tab() {
     //탭메뉴 실행 함수
     function activateTab(tabId) {
         //초기화
@@ -668,7 +756,7 @@ function tab() {
     slider(); //슬라이드 실행
 }
 
-function slider() {
+    function slider() {
     $(".slider").each(function(index) {
         let $this = $(this);
         let swiper = undefined;
@@ -721,6 +809,23 @@ function slider() {
     });
     
 }
-      </script>
+    </script>
+    <script>
+        
+        $(document).ready(function(){            
+            $('.fa-search').click(function(){
+                $('.search_box').css({
+                    'opacity' : '1', 
+                    'visibility' : 'visible'
+                });
+            });
+            $('.fa-close').click(function(){
+                $('.search_box').css({
+                    'opacity' : '0',
+                    'visibility' : 'hidden'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
