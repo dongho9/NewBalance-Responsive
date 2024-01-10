@@ -1,5 +1,4 @@
-
-
+@charset "utf-8";
 @media screen and (min-width:1366px) {
   body{
     overflow-x: hidden;
@@ -247,9 +246,6 @@
       }
       .mc1_box a{
         display: none;
-      }
-      .mc1_box span{
-        display: block;
         border: 1px solid #fff;
         padding: 10px 10px;
         top: 50%;
@@ -257,12 +253,8 @@
         color: #fff;
         transform: translate(-50%, -50%);
         position: absolute;
-        border-radius: 20px;
         z-index: 20;
         transition: 0.5s;
-      }
-      .mc1_box span:hover{
-        background-color: #000;
       }
       .mc1_box:last-child{
         margin-right: 0px;
@@ -273,11 +265,15 @@
         transition: 0.5s;
         z-index: 10;
       }
-      .mc1_box img:hover{
+      .mc1_box:hover img{
         filter: brightness(50%);
       }
-      .mc1_box img:hover ~ a{
+      .mc1_box:hover img ~ a{
         display: block;
+      }
+      .mc1_box a:hover{
+        background-color: #fff;
+        color: #CF112D;
       }
       .mc1_box p{
         margin-top: 20px;
