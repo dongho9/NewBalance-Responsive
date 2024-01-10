@@ -29,7 +29,7 @@
             <ul>
                 <li>
                     <a href="#" title="로그인">
-                        로그인
+                        <span>로그인</span><i class="fa-regular fa-user"></i>
                     </a>
                 </li>
                 <li>
@@ -58,15 +58,18 @@
             <h3>SEARCH</h3>
         </div>
 
+        <i class="fas fa-bars"></i>
+
         <nav class="gnb">
+            <i class="fas fa-close"></i>
             <ul>
                 <li>
-                    <a href="#" title="men">
-                        MEN  
+                    <a href="#" title="men" class="m_m">
+                        MEN  <i class="fas fa-angle-right"></i>
                     </a>
-                    <div class="sub_wrap">
+                    <div class="sub_wrap s_m">
                         <dl class="sub_n">
-                            <dt>MEN</dt>
+                            <dt class="m_back"><i class="fas fa-angle-left"></i>MEN</dt>
                             <dd>
                                 <a href="#" title="전체보기">
                                     전체보기
@@ -81,6 +84,9 @@
                         <dl class="sub">
                             <dt>
                                 신발
+                                <ul>
+                                    <li></li>
+                                </ul>
                             </dt>
                             <dd>
                                 <a href="#" title="">
@@ -146,7 +152,7 @@
                                 <a href="#" title="">
                                     아우터
                                 </a>
-                            </dd>
+                            </dd>   
                         </dl>
                         <dl class="sub sub3">
                             <dt>
@@ -157,9 +163,9 @@
                 </li>
                 <li>
                     <a href="#" title="women">
-                            WOMEN
+                            WOMEN <i class="fas fa-angle-right"></i>
                     </a>
-                    <div class="sub_wrap">
+                    <div class="sub_wrap w_m">
                         <dl class="sub_n">
                             <dt>WOMEN</dt>
                             <dd>
@@ -252,9 +258,9 @@
                 </li>
                 <li>
                     <a href="#" title="kids">
-                            KIDS
+                            KIDS <i class="fas fa-angle-right"></i>
                     </a>
-                    <div class="sub_wrap">
+                    <div class="sub_wrap k_m">
                         <dl class="sub_n">
                             <dt>KIDS</dt>
                             <dd>
@@ -347,7 +353,7 @@
                 </li>
                 <li>
                     <a href="#" title="acc">
-                            ACC
+                            ACC 
                     </a>
                 </li>
                 <li>
@@ -905,6 +911,34 @@
                     'visibility' : 'hidden'
                 });
             });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('i.fa-bars').click(function(){
+                $('.gnb').css('left', '0%');
+            });
+            $('.gnb > i.fa-close').click(function(){
+                $('.gnb').css('left', '-100%');
+            });
+            $('.m_m').click(function(){
+                $('.s_m').css('right', '0%');
+            });
+            $('.m_back').click(function(){
+                $('.s_m').css('right', '100%');
+            });
+
+            const menu = $('.sub dt');
+
+            menu.click(function(){
+                // $(this).next().slideToggle();
+                // $(this).find('i').toggleClass('act');
+            
+                // 2.아코디언 메뉴 하나는 무조건 펼쳐짐
+                $('.sub dt').next().slideUp(); //모든 서브메뉴 위로접고
+                $(this).next().slideDown(); //선택한 메뉴의 서브만 나오게 한다.
+            });
+
         });
     </script>
 </body>
