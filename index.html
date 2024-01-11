@@ -83,7 +83,9 @@
                         </dl>
                         <dl class="sub">
                             <dt>
-                                신발
+                                <a href="#">
+                                    신발
+                                </a>
                                 <ul>
                                     <li></li>
                                 </ul>
@@ -136,7 +138,9 @@
                         </dl>
                         <dl class="sub sub2">
                             <dt>
+                                <a href="#" title="의류">
                                     의류
+                                </a>
                             </dt>
                             <dd>
                                 <a href="#" title="">
@@ -156,18 +160,20 @@
                         </dl>
                         <dl class="sub sub3">
                             <dt>
+                                <a href="#" title="">
                                     언더웨어
+                                </a>
                             </dt>
                         </dl>
                     </div>
                 </li>
                 <li>
-                    <a href="#" title="women">
+                    <a href="#" title="women" class="w_m">
                             WOMEN <i class="fas fa-angle-right"></i>
                     </a>
-                    <div class="sub_wrap w_m">
+                    <div class="sub_wrap s_m2">
                         <dl class="sub_n">
-                            <dt>WOMEN</dt>
+                            <dt class="m_back2"><i class="fas fa-angle-left"></i>WOMEN</dt>
                             <dd>
                                 <a href="#" title="전체보기">
                                     전체보기
@@ -181,7 +187,9 @@
                         </dl>
                         <dl class="sub">
                             <dt>
+                                <a href="#" title="">
                                     신발
+                                </a>   
                             </dt>
                             <dd>
                                 <a href="#" title="">
@@ -231,7 +239,9 @@
                         </dl>
                         <dl class="sub sub2">
                             <dt>
+                                <a href="#" title="">
                                     의류
+                                </a>
                             </dt>
                             <dd>
                                 <a href="#" title="">
@@ -251,18 +261,20 @@
                         </dl>
                         <dl class="sub sub3">
                             <dt>
+                                <a href="#" title="">
                                     언더웨어
+                                </a>
                             </dt>
                         </dl>
                     </div>
                 </li>
                 <li>
-                    <a href="#" title="kids">
-                            KIDS <i class="fas fa-angle-right"></i>
+                    <a href="#" title="kids" class="k_m">
+                        KIDS <i class="fas fa-angle-right"></i>
                     </a>
-                    <div class="sub_wrap k_m">
+                    <div class="sub_wrap s_m3">
                         <dl class="sub_n">
-                            <dt>KIDS</dt>
+                            <dt class="m_back3"><i class="fas fa-angle-left"></i>KIDS</dt>
                             <dd>
                                 <a href="#" title="전체보기">
                                     전체보기
@@ -276,7 +288,9 @@
                         </dl>
                         <dl class="sub">
                             <dt>
+                                <a href="#" title="">
                                     신발
+                                </a>
                             </dt>
                             <dd>
                                 <a href="#" title="">
@@ -326,7 +340,9 @@
                         </dl>
                         <dl class="sub sub2">
                             <dt>
+                                <a href="#" title="">
                                     의류
+                                </a>
                             </dt>
                             <dd>
                                 <a href="#" title="">
@@ -346,7 +362,9 @@
                         </dl>
                         <dl class="sub sub3">
                             <dt>
+                                <a href="#" title="">
                                     언더웨어
+                                </a>
                             </dt>
                         </dl>
                     </div>
@@ -384,10 +402,10 @@
             <div class="visual_slide">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="img/pcmain4.jpg" alt="배너1">
+                    <img src="img/pcmain4.jpg" alt="배너1" class="banner1">
                 </div>
                 <div class="swiper-slide">
-                    <img src="img/pcmain2.jpg" alt="배너2">
+                    <img src="img/pcmain2.jpg" alt="배너2" class="banner2">
                     <span class="s_ti">2002 DAY</span>
                     <p>2002 vintage & premium</p>
                 </div>
@@ -406,7 +424,7 @@
             </section>
 
           <!-- 메인콘텐츠2   -->
-          <section class="mc">
+          <section class="mc mc01">
             <h2>PROMOTION</h3>
                 <div class="mc1_wrap">
                     <div class="mc1_box">
@@ -432,7 +450,9 @@
                     </div>
                 </div>
           </section>
+
       <!-- 메인콘텐츠4 -->
+
           <section class="mc mc_box">
             <div class="t_box">
                 <h3>CT302OC SHOES</h3>
@@ -482,7 +502,7 @@
 
           
           <!-- 메인콘텐츠3 -->
-          <section class="mc">
+          <section class="mc mc03">
             <h2>NEW ARRIVALS</h2>
             <p class="vm">
                 <a href="#" title="view">
@@ -660,7 +680,7 @@
 
     
              <!-- 메인콘텐츠5 -->
-             <section class="mc">
+             <section class="mc mc05">
                 <h2>WHAT'S BEST</h2>
                 <p class="vm">
                     <a href="#" title="view">
@@ -922,24 +942,38 @@
                 $('.gnb').css('left', '-100%');
             });
             $('.m_m').click(function(){
-                $('.s_m').css('right', '0%');
+                $('.s_m').css('left', '0%');
+            });
+            $('.w_m').click(function(){
+                $('.s_m2').css('left', '0%');
+            });
+            $('.k_m').click(function(){
+                $('.s_m3').css('left', '0%');
             });
             $('.m_back').click(function(){
-                $('.s_m').css('right', '100%');
+                $('.s_m').css('left', '-100%');
             });
-
-            const menu = $('.sub dt');
-
-            menu.click(function(){
-                // $(this).next().slideToggle();
-                // $(this).find('i').toggleClass('act');
-            
-                // 2.아코디언 메뉴 하나는 무조건 펼쳐짐
-                $('.sub dt').next().slideUp(); //모든 서브메뉴 위로접고
-                $(this).next().slideDown(); //선택한 메뉴의 서브만 나오게 한다.
+            $('.m_back2').click(function(){
+                $('.s_m2').css('left', '-100%');
             });
-
+            $('.m_back3').click(function(){
+                $('.s_m3').css('left', '-100%');
+            });
         });
+    </script>
+    <script>
+        $(window).resize(function(){
+            w_window = $(window).innerWidth();
+
+            if(w_window < 766){
+                $('.banner1').attr('src', 'img/067367.jpg');
+                $('.banner2').attr('src', 'img/067368.jpg');
+            }
+            else{
+                $('.banner1').attr('src', 'img/pcmain4.jpg');
+                $('.banner2').attr('src', 'img/pcmain2.jpg');
+            }
+        }).resize();
     </script>
 </body>
 </html>
