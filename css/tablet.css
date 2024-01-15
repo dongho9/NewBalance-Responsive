@@ -1,5 +1,5 @@
 @charset "utf-8";
-@media screen and (min-width: 767px) and (max-width:1365px) {
+@media screen and (min-width: 767px) and (max-width:1024px) {
     html{
         overflow-x: hidden;
     }
@@ -626,5 +626,28 @@ address > p{
   white-space: nowrap;
   font-family: 'Nanum Gothic', sans-serif;
 }
-
+@media screen and (min-width: 850px) and (max-width:1024px) {
+  .t_box{
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tab_wrap3{
+  transform: translateX(-50%);
+  padding: 0 15px;
+  bottom: 10%;
+}
+}
+@media screen and (min-width: 776px) and (max-width:849px) {
+  .t_box{
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tab_wrap3{
+  transform: translateX(-50%);
+  padding: 0 15px;
+  bottom: 15%;
+}
+}
 }

@@ -1,5 +1,5 @@
 @charset "utf-8";
-@media screen and (min-width:1366px) {
+@media screen and (min-width:1025px) {
   body{
     overflow-x: hidden;
   }
@@ -589,5 +589,10 @@ address > p{
   font-size: 30px;
   color: #fff;
   font-family: 'Nanum Gothic', sans-serif;
+}
+@media screen and (min-width: 1026px) and (max-width:1200px){
+  .gnb > ul > li{
+    font-size: 12px;
+  }
 }
 }

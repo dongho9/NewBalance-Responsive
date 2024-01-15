@@ -17,7 +17,7 @@
   font-style: normal;
 }
 :root {
-  --swiper-theme-color: #007aff;
+  --swiper-theme-color: #CF112D;
 }
 .swiper-container {
   margin-left: auto;
@@ -247,10 +247,9 @@
   transform: scale(0.33);
 }
 .swiper-pagination-bullet {
-  width: 8px;
+  width: 35px;
   height: 8px;
   display: inline-block;
-  border-radius: 100%;
   background: #000;
   opacity: 0.2;
 }
@@ -276,7 +275,7 @@ button.swiper-pagination-bullet {
   transform: translate3d(0px, -50%, 0);
 }
 .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 6px 0;
+  margin: 30px 0;
   display: block;
 }
 .swiper-container-vertical > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {

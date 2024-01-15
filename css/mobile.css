@@ -4,13 +4,13 @@
         overflow-x: hidden;
     }
     header{
-        line-height: 60px;
         width: 100%;
         height: 100%;
         border-bottom: 1px solid #ccc;
         position: relative;
     }
     h1{
+      height: 80px;
         text-align: center;
         /* background-color: royalblue; */
     }
@@ -18,7 +18,7 @@
         z-index: 2000;
     }
     h1 img{
-        margin-top: 15px;
+        margin-top: 10px;
     }
     .mc{
       width: 90%;
@@ -30,7 +30,6 @@
   .mc > h2{
     font-size: 24px;
   }
-
   .mc01{
     margin-top: 70px;
     height: 100%;
@@ -48,7 +47,7 @@
     .log{
         position: absolute;
         right: 0;
-        top: 30px;
+        top: 20px;
         z-index: 500;
     }
     .log i.fa-user{
@@ -67,9 +66,8 @@
         display: flex;
     }
     .log ul li{
-        margin-right: 25px;
+        margin-right: 20px;
         line-height: 40px;
-        font-size: 16px;
     }
     .log ul li:last-child{
         margin-right: 30px;
@@ -311,6 +309,7 @@
 .swiper-slide{
     overflow-x: auto;
 }
+
 .swiper-slide p{
     font-size: 17px;
     font-weight: bold;
@@ -415,7 +414,7 @@
       /* 메인콘텐츠4 */
       .mc_box{
         width: 100%;
-        height: 780px;
+        height: 580px;
         background-image: url('../img/pcmain7.png');
         background-attachment: fixed; /* 배경고정 */
         background-repeat: no-repeat; /* 이미지 반복하지 않기 */
@@ -425,7 +424,7 @@
     .t_box{
       width: 300px;
       position: absolute;
-      top: 7%;
+      top: 4%;
       left: 50%;
       transform: translateX(-50%);
       text-align: center;
@@ -562,6 +561,7 @@ footer{
   font-size: 12px;
   height: 220px;
 }
+
 .f_top{
   line-height: 20px;
   padding-bottom: 20px;
@@ -627,4 +627,19 @@ address > p{
   font-family: 'Nanum Gothic', sans-serif;
 }
 
+.top_btn{ 
+  font-size: 36px;
+}
+@media screen and (max-width: 650px){
+  .tab_wrap3 img{
+    /* width: auto; */
+    height: 300px;
+  }
+}
+@media screen and (max-width: 766px){
+  .tab_wrap3 img{
+    /* width: 100%; */
+    height: 380px;
+  }
+}
 }

@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>뉴발란스 홈페이지</title>
-    <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link rel="stylesheet" href="css/common.css" type="text/css">
-    <link rel="stylesheet" href="css/mobile.css" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
+    <link rel="stylesheet" href="./css/mobile.css" type="text/css">
     <link rel="stylesheet" href="./css/tablet.css" type="text/css">
     <link rel="stylesheet" href="./css/pc.css" type="text/css">
     <link rel="stylesheet" href="css/swiper.css" type="text/css">
@@ -470,27 +471,27 @@
                                 <ul class="swiper-wrapper">
                                     <li class="swiper-slide">
                                      <a href="#" title="상품">
-                                         <img src="img/iu01.png" alt="아이유">
+                                         <img src="img/iu01.png" alt="아이유" class="iu1">
                                      </a> 
                                     </li>
                                     <li class="swiper-slide">
                                         <a href="#" title="상품">
-                                            <img src="img/iu02.png" alt="아이유">
+                                            <img src="img/iu02.png" alt="아이유" class="iu2">
                                         </a> 
                                     </li>
                                     <li class="swiper-slide">
                                         <a href="#" title="상품">
-                                            <img src="img/iu03.png" alt="아이유">
+                                            <img src="img/iu03.png" alt="아이유" class="iu3">
                                         </a> 
                                     </li>
                                     <li class="swiper-slide">
                                         <a href="#" title="상품">
-                                            <img src="img/iu04.png" alt="아이유">
+                                            <img src="img/iu04.png" alt="아이유" class="iu4">
                                         </a> 
                                     </li>
                                     <li class="swiper-slide">
                                         <a href="#" title="상품">
-                                            <img src="img/iu05.png" alt="아이유">
+                                            <img src="img/iu05.png" alt="아이유" class="iu5">
                                         </a> 
                                     </li>
                                 </ul>
@@ -756,7 +757,7 @@
     </main>
     <!-- 푸터 영역 -->
     <footer>
-        <a href="#" title="" class="top_btn">
+        <a href="#" title="탑버튼" class="top_btn">
             <i class="fas fa-circle-arrow-up"></i>
         </a>
         <div class="f_top">
@@ -959,6 +960,26 @@
             $('.m_back3').click(function(){
                 $('.s_m3').css('left', '-100%');
             });
+
+            
+        });
+    </script>    
+    <script>
+        let scrollTop;
+        const top_btn = document.querySelector('.top_btn');
+
+        $(document).ready(function(){
+            let scrollTop2;
+            $(window).scroll(function(){
+                scrollTop2 = $(this).scrollTop();
+                console.log(scrollTop2);
+
+                if(scrollTop2>=800){
+                    $('.top_btn').addClass('act');
+                }else{
+                    $('.top_btn').removeClass('act');
+                }
+            });
         });
     </script>
     <script>
@@ -968,12 +989,23 @@
             if(w_window < 766){
                 $('.banner1').attr('src', 'img/067367.jpg');
                 $('.banner2').attr('src', 'img/067368.jpg');
+                // $('.iu1').attr('src', 'img/iu1.png');
+                // $('.iu2').attr('src', 'img/iu2.png');
+                // $('.iu3').attr('src', 'img/iu3.png');
+                // $('.iu4').attr('src', 'img/iu4.png');
+                // $('.iu5').attr('src', 'img/iu5.png');
             }
             else{
                 $('.banner1').attr('src', 'img/pcmain4.jpg');
                 $('.banner2').attr('src', 'img/pcmain2.jpg');
+                // $('.iu1').attr('src', 'img/iu01.png');
+                // $('.iu2').attr('src', 'img/iu02.png');
+                // $('.iu3').attr('src', 'img/iu03.png');
+                // $('.iu4').attr('src', 'img/iu04.png');
+                // $('.iu5').attr('src', 'img/iu05.png');
             }
         }).resize();
     </script>
+
 </body>
 </html>

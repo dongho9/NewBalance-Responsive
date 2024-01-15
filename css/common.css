@@ -80,7 +80,7 @@ h2{
 
 
 .top_btn{ 
-    display: block;
+    /* display: block; */
     line-height: 45px;
     text-align: center;
     width: 45px;
@@ -92,8 +92,14 @@ h2{
     bottom: 6%;
     right: 3%;
     z-index: 1000000;
+    transition: 0.5s;
+    opacity: 0; /* 투명도  */
+    visibility: hidden; /* 콘텐츠 숨기기 */
 }
-
+.act{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
 /* https://dbreblog.com/53 */
 .ani{
     width: 100%;
