@@ -175,13 +175,18 @@
         line-height: 210%;
         /* color: #fff; */
         font-weight: 800;
-        font-size: 19px;
+        font-size: 21px;
         font-family: 'Nanum Gothic', sans-serif;
       }
       .sub > dd > a{
         display: block;
         line-height:250%;
         font-family: 'Nanum Gothic', sans-serif;
+        transition: 0.5s;
+        font-size: 15px;
+      }
+      .sub > dd > a:hover{
+        color: #CF112D;
       }
       .sub_wrap{
         height: 0px;
@@ -224,7 +229,7 @@
         position: absolute;
       }
       .sub3 > li > a{
-        font-size: 19px;
+        font-size: 21px;
         font-family: 'Nanum Gothic', sans-serif;
       }
     /* 메인영역 */
