@@ -426,6 +426,7 @@
       color: #fff;
       padding: 10px 10px;
       font-weight: 800;
+      transition: 0.5s;
     }
     .shop:hover{
       background-color: #fff;
@@ -605,6 +606,10 @@ address > p{
   font-size: 30px;
   color: #fff;
   font-family: 'Nanum Gothic', sans-serif;
+  transition: 0.5s;
+}
+.fab:hover, .fa-brands:hover{
+  color: #CF112D;
 }
 @media screen and (min-width: 1026px) and (max-width:1200px){
   .gnb > ul > li{

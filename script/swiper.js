@@ -2962,7 +2962,7 @@
       return;
     }
     swiper.allowClick = false;
-    if (!params.cssMode) {
+    if (params.cssMode) {
       e.preventDefault();
     }
     if (params.touchMoveStopPropagation && !params.nested) {

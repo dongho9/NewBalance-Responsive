@@ -648,4 +648,22 @@ address > p{
     height: 380px;
   }
 }
+@media screen and (max-width: 400px){
+  .gnb ul{
+    line-height: 60px;
+  }
+  .gnb ul li a{
+    font-size: 14px;
+  }
+  footer{
+    height: 260px;
+  }
+  .vm a{
+    font-size: 9px;
+    top: 0px;
+  }
+  .log ul li{
+    margin-right: 15px;
+  }
+}
 }
