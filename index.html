@@ -979,15 +979,12 @@ $(document).ready(function(){
             $('.m_back3').off('click');
         }
     }
-    if ($(window).width() > 1024) {
-    }
     // 초기화할 때 한 번 실행합니다.
     toggleMenu();
     
     // 리사이즈 이벤트 핸들러를 추가합니다.
     $(window).resize(function() {
         // 이벤트 핸들러를 재설정합니다.
-        $('.gnb').css('left','0');
         toggleMenu();
     });
 });
@@ -1014,6 +1011,12 @@ $(document).ready(function(){
         $(window).resize(function(){
             w_window = $(window).innerWidth();
 
+            if(w_window > 1024){
+                $('.gnb').css('left' ,'0');
+            }
+            else{
+                $('.gnb').css('left','-100%');
+            }
             if(w_window < 766){
                 $('.banner1').attr('src', 'img/067367.jpg');
                 $('.banner2').attr('src', 'img/067368.jpg');
